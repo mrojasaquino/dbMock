@@ -1,4 +1,4 @@
-package dbmocker;
+package races.dbmocker;
 
 import org.jooq.DSLContext;
 import org.jooq.Record;

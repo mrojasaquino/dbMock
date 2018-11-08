@@ -1,4 +1,4 @@
-package dbmocker;
+package races.dbmocker;
 
 import java.sql.SQLException;
 

@@ -10,10 +10,13 @@
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-	
+
 		<version.jooq>3.11.7</version.jooq>
 		<version.slf4j>1.7.25</version.slf4j>
 		<version.logback>1.2.3</version.logback>
+
+		<version.postgresql>42.2.5</version.postgresql>
+		<version.hikaricp>3.1.0</version.hikaricp>
 	</properties>
 
 	<dependencies>
@@ -21,6 +24,17 @@
 		<dependency>
 			<groupId>org.jooq</groupId>
 			<artifactId>jooq</artifactId>
+			<version>${version.jooq}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jooq</groupId>
+			<artifactId>jooq-meta</artifactId>
+			<version>${version.jooq}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jooq</groupId>
+			<artifactId>jooq-codegen</artifactId>
 			<version>${version.jooq}</version>
 		</dependency>
 
@@ -40,6 +54,19 @@
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
 			<version>${version.logback}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>${version.postgresql}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.zaxxer</groupId>
+			<artifactId>HikariCP</artifactId>
+			<version>${version.hikaricp}</version>
 		</dependency>
 
 	</dependencies>
